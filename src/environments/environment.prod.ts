@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  urlPersonas: 'https://api.mocki.io/v1/570c5e5c',
+  urlPersonas: 'https://api.mocki.io/v1/ee1a9149',
   firebaseConfig : {
     apiKey: 'AIzaSyBGFLFGaYABRfq2yV4zu1iBG4t_I45BWug',
     authDomain: 'appinputoutput-ab88c.firebaseapp.com',
