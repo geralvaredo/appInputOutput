@@ -9,8 +9,8 @@ import {Router} from '@angular/router';
   styleUrls: ['./registro.component.scss']
 })
 export class RegistroComponent implements OnInit {
-  isRegistered = 'home';
-  registerError = 'register';
+  isRegistered = 'bienvenido';
+  registerError = 'error';
   usuario = new Usuario();
 
   constructor(private auth: AuthService, router: Router) {

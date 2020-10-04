@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "appInputOutput"
+    }
+  },
+  "defaultProject": "appInputOutput",
+  "cli": {
+    "analytics": false
+  }
 }
