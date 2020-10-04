@@ -1,0 +1,35 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listados</title>
+</head>
+
+<body>
+<table mat-table class="table table-striped" class="mat-elevation-z8" >
+  <thead>
+  <tr>
+    <th class="encabezado">Nombre</th>
+    <th class="encabezado">Apellido</th>
+    <th class="encabezado">Sexo</th>
+    <th class="encabezado">Fecha de Nacimiento</th>
+    <th class="encabezado">Email</th>
+    <th>Foto de Perfil</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let usuario of listaUsuarios">
+    <td style="width: 30%; text-align: center">{{usuario.Nombre}}</td>
+    <td style="width: 30%; text-align: center">{{usuario.Apellido}}</td>
+    <td style="width: 30%;text-align: center">{{usuario.Sexo}}</td>
+    <td style="width: 30%;text-align: center">{{usuario.FechaNac}}</td>
+    <td style="width: 30%;text-align: center">{{usuario.email}}</td>
+    <td style="width: 30%;">
+      <button mat-icon-button color="primary" (click)= "mostrarDetalle(usuario)">
+        <mat-icon>visibility</mat-icon>
+      </button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body>

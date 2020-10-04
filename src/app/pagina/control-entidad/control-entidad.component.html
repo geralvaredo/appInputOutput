@@ -1,0 +1,21 @@
+<mat-toolbar class="toolbar">
+  <span style="cursor: pointer;">{{title}}</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon" aria-label="Salir" (click)="salir()">
+    <mat-icon>exit_to_app</mat-icon>
+  </button>
+</mat-toolbar>
+<div class="div-general-administrador">
+  <div class="div-listado">
+    <app-listado-entidad [listaUsuarios]="listaUsuarios"
+                         (usuarioSeleccionado)="personaSeleccionada($event)"></app-listado-entidad>
+  </div>
+  <div class="div-usuario">
+    <div class="mat-elevation-z8" style="margin-top: 10px;">
+      <app-detalle-entidad [usuarioMostrado]="usuarioSeleccionado"></app-detalle-entidad>
+    </div>
+  </div>
+
+</div>
+
+

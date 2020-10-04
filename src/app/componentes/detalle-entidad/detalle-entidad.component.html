@@ -1,0 +1,13 @@
+<div *ngIf="!usuarioMostrado" style="padding: 20px;">
+  <h1 style="text-align: center;">Detalle Usuario</h1>
+  <p style="text-align: center; margin-top: 10px;"> Seleccione un usuario </p>
+</div>
+<div *ngIf="usuarioMostrado" style="padding: 20px;">
+  <h1 style="text-align: center;">Detalle Usuario</h1>
+  <p style="">Nombre : {{usuarioMostrado.Nombre}}</p>
+  <br>
+  <p style="">Apellido: {{usuarioMostrado.Apellido}}</p>
+  <br>
+  <p>Perfil:</p>
+  <img [src]="usuarioMostrado.FotoPerfil" alt="" style="width: 30%; height: 30%;" srcset="">
+</div>
